@@ -33,13 +33,13 @@ export default function About() {
           <motion.div className="about-grid" variants={staggerContainer} initial="hidden" whileInView="visible" viewport={{ once: true }}>
             <div className="about-text">
               <motion.p variants={fadeInUp}>
-                Hello! I'm <strong>Asror Aliqulov</strong>,a Frontend Developer passionate about building modern, responsive, and user-friendly web interfaces. I enjoy turning ideas and designs into clean, functional websites using React, JavaScript, HTML, and CSS.
+                Hello! I'm <strong>Asror Aliqulov</strong>, a Frontend Developer passionate about building modern, responsive, and user-friendly web interfaces. I enjoy turning ideas and designs into clean, functional websites using <strong>HTML, CSS, JavaScript, and Tailwind CSS</strong>.
               </motion.p>
               <motion.p variants={fadeInUp}>
-                I value writing clean, maintainable code and creating interfaces that are both visually appealing and easy to use. Every project is an opportunity to improve my skills and learn new technologies.
+                I value writing clean, maintainable code and creating interfaces that are both visually appealing and easy to use. I also actively use <strong>AI tools</strong> to speed up development and solve problems more efficiently.
               </motion.p>
               <motion.p variants={fadeInUp}>
-                My tech stack is intentionally focused. I specialize deeply in <strong>HTML, CSS, JavaScript, and React</strong>. By mastering these core frontend technologies, I can build highly optimized, accessible, and maintainable client-side architectures without relying on heavy abstractions.
+                My tech stack is intentionally focused. I specialize in <strong>HTML, CSS, JavaScript, Tailwind CSS</strong>, and integrating <strong>AI</strong> into my workflow. By mastering these core frontend technologies, I can build highly optimized, accessible, and maintainable client-side architectures.
               </motion.p>
 
               <div className="about-highlights">
@@ -49,7 +49,7 @@ export default function About() {
                 </motion.div>
                 <motion.div variants={fadeInUp} className="highlight-box">
                   <h3 className="highlight-title">Personal Values</h3>
-                  <p className="highlight-desc">Clean code, responsive design, accessibility, continuous learning, and attention to detail.</p>
+                  <p className="highlight-desc">Clean code, responsive design, accessibility, continuous learning, and leveraging AI to build smarter.</p>
                 </motion.div>
               </div>
             </div>

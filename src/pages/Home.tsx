@@ -34,7 +34,7 @@ export default function Home() {
                 Frontend Developer
               </motion.h1>
               <motion.p variants={fadeInUp} className="hero-desc">
-                Passionate about building modern, responsive, and user-friendly web interfaces using React, JavaScript, HTML, and CSS. I enjoy turning ideas and designs into clean, functional, and accessible web experiences.
+                Passionate about building modern, responsive, and user-friendly web interfaces using <strong>HTML, CSS, JavaScript, and Tailwind CSS</strong>. I also leverage <strong>AI tools</strong> to build faster and smarter.
               </motion.p>
               <motion.div variants={fadeInUp} className="hero-actions">
                 <Link to="/projects" className="btn btn-primary">
@@ -132,7 +132,7 @@ export default function Home() {
               <Link to="/skills" className="view-all-link">View all skills <ArrowRight size={16} /></Link>
             </motion.div>
             <motion.div variants={fadeInUp} className="skill-badges">
-              {['HTML5', 'CSS3', 'JavaScript (ES6+)', 'React', 'TypeScript', 'Responsive Design'].map(skill => (
+              {['HTML5', 'CSS3', 'JavaScript (ES6+)', 'Tailwind CSS', 'AI Tools', 'Responsive Design'].map(skill => (
                 <div className="skill-badge" key={skill} style={{ background: 'var(--bg-card)' }}>
                   {skill}
                 </div>

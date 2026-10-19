@@ -4,12 +4,12 @@ import { motion } from 'motion/react';
 const services = [
   {
     title: 'Landing Page Development',
-    desc: 'Building responsive and visually appealing landing pages using HTML, CSS, and JavaScript.',
+    desc: 'Building responsive and visually appealing landing pages using HTML, CSS, JavaScript, and Tailwind CSS.',
     icon: <LayoutTemplate size={24} />
   },
   {
-    title: 'React Development',
-    desc: 'Developing interactive, state-driven single page applications using modern React architecture and hooks.',
+    title: 'Tailwind CSS Development',
+    desc: 'Creating modern, utility-first designs and UI components rapidly using Tailwind CSS framework.',
     icon: <Code2 size={24} />
   },
   {
@@ -28,8 +28,8 @@ const services = [
     icon: <Box size={24} />
   },
   {
-    title: 'Frontend Maintenance',
-    desc: 'Fixing layout issues, improving responsiveness, and resolving frontend bugs to enhance user experience.',
+    title: 'AI-Assisted Development',
+    desc: 'Leveraging AI tools to speed up development, improve code quality, and solve complex frontend challenges faster.',
     icon: <Bug size={24} />
   }
 ];

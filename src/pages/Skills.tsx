@@ -1,18 +1,18 @@
-import { CheckCircle2, Code, Layout, GitBranch, TerminalSquare, Laptop, Layers } from 'lucide-react';
+import { Code, Layout, TerminalSquare, Layers, Wind, Bot, GitBranch, Github } from 'lucide-react';
 import { motion } from 'motion/react';
 
 const coreSkills = [
-  { name: 'HTML', icon: <Code size={24} /> },
-  { name: 'CSS', icon: <Layout size={24} /> },
+  { name: 'HTML5', icon: <Code size={24} /> },
+  { name: 'CSS3', icon: <Layout size={24} /> },
   { name: 'JavaScript', icon: <TerminalSquare size={24} /> },
-  { name: 'React', icon: <Layers size={24} /> },
+  { name: 'Tailwind CSS', icon: <Wind size={24} /> },
 ];
 
 const secondarySkills = [
-  { name: 'Responsive Design', icon: <Laptop size={24} /> },
+  { name: 'AI Tools', icon: <Bot size={24} /> },
+  { name: 'Responsive Design', icon: <Layers size={24} /> },
   { name: 'Git', icon: <GitBranch size={24} /> },
-  { name: 'GitHub', icon: <GitBranch size={24} /> },
-  { name: 'UI Implementation', icon: <Layout size={24} /> }
+  { name: 'GitHub', icon: <Github size={24} /> },
 ];
 
 const fadeInUp = {

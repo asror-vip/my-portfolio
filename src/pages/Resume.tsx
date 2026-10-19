@@ -3,7 +3,7 @@ import { motion } from 'motion/react';
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.16, 1, 0.3, 1]as const } }
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.16, 1, 0.3, 1] as const } }
 };
 
 const staggerContainer = {
@@ -50,16 +50,16 @@ export default function Resume() {
             <motion.div variants={fadeInUp} className="resume-section">
               <h3 className="resume-heading">Summary</h3>
               <p className="resume-text">
-                Frontend Developer with hands-on experience building responsive websites and web applications using React, JavaScript, HTML, and CSS. Passionate about writing clean code, creating user-friendly interfaces, and continuously improving frontend development skills.
+                Frontend Developer with hands-on experience building responsive websites and web applications using HTML, CSS, JavaScript, and Tailwind CSS. I actively integrate AI tools into my workflow to develop faster and smarter. Passionate about clean code, user-friendly interfaces, and continuously improving my skills.
               </p>
             </motion.div>
 
             <motion.div variants={fadeInUp} className="resume-section">
               <h3 className="resume-heading">Skills</h3>
               <div className="resume-skills">
-                <strong>Core:</strong> HTML5, CSS3, JavaScript (ES6+), React<br/>
-                <strong>UI & Styling:</strong> CSS, Responsive Design, Framer Motion<br/>
-                <strong>Tools:</strong> Git, GitHub, Vite, Figma<br/>
+                <strong>Core:</strong> HTML5, CSS3, JavaScript (ES6+), Tailwind CSS<br/>
+                <strong>AI & Tools:</strong> AI-assisted development, Git, GitHub, Vite, Figma<br/>
+                <strong>UI & Styling:</strong> Responsive Design, Framer Motion<br/>
                 <strong>Concepts:</strong> Component-Based Development, Responsive Design, Accessibility, Performance Optimization
               </div>
             </motion.div>
@@ -72,8 +72,8 @@ export default function Resume() {
                   <span>Present</span>
                 </div>
                 <p className="resume-text">
-                  - Developed responsive website clones and portfolio projects using React, HTML, CSS, and JavaScript.<br/>
-                  - Built reusable React components and implemented client-side routing.<br/>
+                  - Developed responsive website clones and portfolio projects using HTML, CSS, JavaScript, and Tailwind CSS.<br/>
+                  - Leveraged AI tools to accelerate development and improve code quality.<br/>
                   - Focused on responsive layouts, clean UI, and modern frontend development practices.
                 </p>
               </div>
@@ -83,8 +83,8 @@ export default function Resume() {
                   <span>Past Year</span>
                 </div>
                 <p className="resume-text">
-                  - Continuously learning React and modern JavaScript.<br/>
-                  - Exploring advanced frontend techniques, UI/UX principles, and performance optimization through real-world projects.
+                  - Continuously learning modern JavaScript and Tailwind CSS.<br/>
+                  - Exploring advanced frontend techniques, UI/UX principles, and AI-powered development tools.
                 </p>
               </div>
             </motion.div>
@@ -97,8 +97,8 @@ export default function Resume() {
                   <span>Present</span>
                 </div>
                 <p className="resume-text">
-                  - Completed advanced frontend challenges and masterclasses.<br/>
-                  - Actively studying advanced React patterns and UI/UX design principles.
+                  - Completed frontend challenges and real-world projects.<br/>
+                  - Actively studying advanced JavaScript, Tailwind CSS patterns, and AI integration in development.
                 </p>
               </div>
             </motion.div>

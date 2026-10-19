@@ -41,7 +41,7 @@
 .nav-link {
   color: var(--text-muted);
   font-size: 0.95rem;
-  
+
   position: relative;
   transition: var(--transition);
 }
