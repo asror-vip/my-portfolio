@@ -66,11 +66,13 @@
 
 .about-image {
   width: 100%;
-  aspect-ratio: 4/5;
+  aspect-ratio: 4/3;
   background: var(--bg-card);
   border: 1px solid var(--border-color);
   border-radius: 8px;
   position: relative;
+  background-image: url(../imgs/portfolio.png);
+  background-position: center;
 }
 
 /* Projects */
@@ -500,6 +502,15 @@
     padding: 2rem;
   }
 
+  .about-highlights {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .project-links {
+    flex-wrap: wrap;
+  }
+
   .timeline::before {
     left: 16px;
   }
@@ -613,6 +624,14 @@
 }
 
 @media (max-width: 480px) {
+  .page-header {
+    padding: 8rem 0 3.5rem;
+  }
+
+  .page-content {
+    padding: 4rem 0;
+  }
+
   .page-title {
     font-size: 2.2rem;
   }
@@ -631,5 +650,27 @@
 
   .skills-grid {
     gap: 2rem;
+    grid-template-columns: 1fr !important;
+  }
+
+  .skill-card-premium {
+    min-width: 0;
+    padding: 1.25rem;
+  }
+
+  .contact-link {
+    padding: 1.25rem;
+  }
+
+  .resume-container {
+    padding: 1.5rem;
+  }
+
+  .resume-section-title {
+    font-size: 2rem;
+  }
+
+  .resume-contact-info {
+    overflow-wrap: anywhere;
   }
 }

@@ -144,6 +144,11 @@
 }
 
 @media (max-width: 768px) {
+  .box,
+  .hero-content {
+    min-width: 0;
+  }
+
   .img-container{
     display: none;
   }

@@ -4,7 +4,7 @@ import { motion } from 'motion/react';
 const services = [
   {
     title: 'Landing Page Development',
-    desc: 'I build fast, high-converting landing pages tailored to your brand identity with precise CSS and HTML.',
+    desc: 'Building responsive and visually appealing landing pages using HTML, CSS, and JavaScript.',
     icon: <LayoutTemplate size={24} />
   },
   {
@@ -14,22 +14,22 @@ const services = [
   },
   {
     title: 'Responsive Websites',
-    desc: 'Creating websites that provide an optimal viewing experience across a wide range of devices, from desktops to mobile phones.',
+    desc: 'Developing websites that work smoothly across desktops, tablets, and mobile devices.',
     icon: <MonitorSmartphone size={24} />
   },
   {
     title: 'Website Redesign',
-    desc: 'Transforming outdated interfaces into modern, minimalist designs that follow current UX/UI best practices.',
+    desc: 'Refreshing existing websites with modern layouts, improved usability, and responsive design.',
     icon: <RefreshCcw size={24} />
   },
   {
-    title: '3D Design Integration',
-    desc: 'Implementing interactive 3D elements and immersive web experiences using modern web graphics libraries.',
+    title: 'UI Implementation',
+    desc: 'Converting Figma or design mockups into clean, pixel-perfect, and responsive web interfaces.',
     icon: <Box size={24} />
   },
   {
-    title: 'Frontend Bug Fixing',
-    desc: 'Diagnosing and resolving CSS layout issues, JavaScript errors, and cross-browser compatibility problems.',
+    title: 'Frontend Maintenance',
+    desc: 'Fixing layout issues, improving responsiveness, and resolving frontend bugs to enhance user experience.',
     icon: <Bug size={24} />
   }
 ];

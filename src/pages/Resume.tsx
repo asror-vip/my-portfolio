@@ -24,7 +24,7 @@ export default function Resume() {
       <header className="page-header">
         <div className="container">
           <motion.h1 variants={fadeInUp} className="page-title">Resume</motion.h1>
-          <motion.p variants={fadeInUp} className="page-subtitle">A summary of my qualifications, skills, and experience.</motion.p>
+          <motion.p variants={fadeInUp} className="page-subtitle">A summary of my skills, projects, and frontend development journey.</motion.p>
         </div>
       </header>
 
@@ -43,50 +43,48 @@ export default function Resume() {
               <h2 className="resume-section-title">Asror Aliqulov</h2>
               <p className="resume-contact-info">
                 Frontend Developer<br/>
-                asror8471@gmail.com • github.com/asror
+                asror8471@gmail.com • github.com/asror8471-gif
               </p>
             </motion.div>
 
             <motion.div variants={fadeInUp} className="resume-section">
               <h3 className="resume-heading">Summary</h3>
               <p className="resume-text">
-                Detail-oriented Frontend Developer specializing in React, TypeScript, and modern CSS. 
-                Passionate about building responsive, accessible, and high-performance user interfaces 
-                with a focus on premium, minimalist design.
+                Frontend Developer with hands-on experience building responsive websites and web applications using React, JavaScript, HTML, and CSS. Passionate about writing clean code, creating user-friendly interfaces, and continuously improving frontend development skills.
               </p>
             </motion.div>
 
             <motion.div variants={fadeInUp} className="resume-section">
               <h3 className="resume-heading">Skills</h3>
               <div className="resume-skills">
-                <strong>Core:</strong> HTML5, CSS3, JavaScript (ES6+), TypeScript, React<br/>
-                <strong>UI & Styling:</strong> CSS Modules, Styled Components, Framer Motion, Responsive Design<br/>
-                <strong>Tools:</strong> Git, GitHub, Vite, Webpack, Figma<br/>
-                <strong>Concepts:</strong> Component-Driven Architecture, Performance Optimization, Accessibility (a11y)
+                <strong>Core:</strong> HTML5, CSS3, JavaScript (ES6+), React<br/>
+                <strong>UI & Styling:</strong> CSS, Responsive Design, Framer Motion<br/>
+                <strong>Tools:</strong> Git, GitHub, Vite, Figma<br/>
+                <strong>Concepts:</strong> Component-Based Development, Responsive Design, Accessibility, Performance Optimization
               </div>
             </motion.div>
 
             <motion.div variants={fadeInUp} className="resume-section">
-              <h3 className="resume-heading">Experience</h3>
+              <h3 className="resume-heading">Projects</h3>
               <div className="resume-item">
                 <div className="resume-item-header">
-                  <h4>Independent Frontend Developer</h4>
+                  <h4>Personal Frontend Projects</h4>
                   <span>Present</span>
                 </div>
                 <p className="resume-text">
-                  - Designed and developed custom web applications and high-converting landing pages for freelance clients.<br/>
-                  - Implemented responsive, mobile-first layouts using modern CSS techniques.<br/>
-                  - Focused on optimizing Web Vitals and ensuring cross-browser compatibility.
+                  - Developed responsive website clones and portfolio projects using React, HTML, CSS, and JavaScript.<br/>
+                  - Built reusable React components and implemented client-side routing.<br/>
+                  - Focused on responsive layouts, clean UI, and modern frontend development practices.
                 </p>
               </div>
               <div className="resume-item">
                 <div className="resume-item-header">
-                  <h4>Open Source & Personal Projects</h4>
+                  <h4>Self-Taught Frontend Developer</h4>
                   <span>Past Year</span>
                 </div>
                 <p className="resume-text">
-                  - Built multiple frontend projects including complex dashboard UIs and e-commerce templates.<br/>
-                  - Mastered React state management and hooks architecture.
+                  - Continuously learning React and modern JavaScript.<br/>
+                  - Exploring advanced frontend techniques, UI/UX principles, and performance optimization through real-world projects.
                 </p>
               </div>
             </motion.div>

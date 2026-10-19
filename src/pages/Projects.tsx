@@ -21,10 +21,10 @@ const allProjects = [
     id: 2,
     title: 'SEO Website',
     desc: 'A modern corporate website clone for a digital agency offering web development, SEO optimization, UI/UX design, and online marketing services. Built as a frontend practice project with a responsive and clean user interface.',
-    tech: ['React', 'Tailwind CSS', 'TypeScript'],
+    tech: ['Tailwind CSS', 'TypeScript', 'AI'],
     category: 'React',
     image: webgoImg,
-    live: 'https://webgouz.netlify.app/',
+    live: 'https://vebgo-clone.netlify.app/',
     github: 'https://github.com/asror8471-gif/webGo',
   },
   {

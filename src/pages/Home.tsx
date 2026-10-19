@@ -2,6 +2,8 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, Code2, LayoutTemplate, Smartphone } from 'lucide-react';
 import { motion } from 'motion/react';
 import phoneImg from '../imgs/phoneimg.png';
+import mebelImg from '../projectImg/mebel.png';
+import webgoImg from '../projectImg/webgo.png';
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 30 },
@@ -32,8 +34,7 @@ export default function Home() {
                 Frontend Developer
               </motion.h1>
               <motion.p variants={fadeInUp} className="hero-desc">
-                I specialize in building modern, responsive, and user-friendly web interfaces using React.
-                Translating design into pixel-perfect, high-performance code.
+                Passionate about building modern, responsive, and user-friendly web interfaces using React, JavaScript, HTML, and CSS. I enjoy turning ideas and designs into clean, functional, and accessible web experiences.
               </motion.p>
               <motion.div variants={fadeInUp} className="hero-actions">
                 <Link to="/projects" className="btn btn-primary">
@@ -96,20 +97,20 @@ export default function Home() {
             <motion.div variants={fadeInUp} className="preview-grid">
               <Link to="/projects" className="project-card">
                 <div className="project-image">
-                  <div className="project-image-placeholder">UI</div>
+                  <div className="project-image-placeholder"><img src={webgoImg} alt="webgo img" /></div>
                 </div>
                 <div className="project-info">
-                  <h3 className="project-title">Finance Dashboard</h3>
-                  <p className="project-desc">A comprehensive frontend application for tracking personal finances.</p>
+                  <h3 className="project-title">WebGO</h3>
+                  <p className="project-desc">A responsive digital agency website clone showcasing web development, SEO services, and modern business solutions.</p>
                 </div>
               </Link>
               <Link to="/projects" className="project-card">
                 <div className="project-image">
-                  <div className="project-image-placeholder">UI</div>
+                  <div className="project-image-placeholder"><img src={mebelImg} alt="mebel img" /></div>
                 </div>
                 <div className="project-info">
-                  <h3 className="project-title">E-Commerce Product Page</h3>
-                  <p className="project-desc">An interactive product detail page with custom image galleries.</p>
+                  <h3 className="project-title">Shosh Mebel</h3>
+                  <p className="project-desc">A responsive furniture website clone featuring modern product showcases and a clean user experience.</p>
                 </div>
               </Link>
             </motion.div>

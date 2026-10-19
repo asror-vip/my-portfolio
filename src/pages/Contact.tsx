@@ -55,7 +55,7 @@ export default function Contact() {
                   <ArrowRight size={16} />
                 </a>
 
-                <a href="https://www.instagram.com/asror.pg1111/" target="_blank" rel="noopener noreferrer" className="contact-link">
+                <a href="https://www.instagram.com/asror.tme/" target="_blank" rel="noopener noreferrer" className="contact-link">
                   <div className="contact-link-left">
                     <Instagram size={20} />
                     <span>Instagram Profile</span>

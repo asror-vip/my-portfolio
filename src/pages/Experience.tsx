@@ -35,29 +35,29 @@ export default function Experience() {
               <div className="timeline-dot"></div>
               <div className="timeline-date">Present</div>
               <h3 className="timeline-title">Independent Development</h3>
-              <p className="timeline-org">Freelance & Open Source</p>
+              <p className="timeline-org">Personal Projects & Portfolio</p>
               <p className="timeline-desc">
-                Focusing on building high-quality freelance projects for clients. Constructing accessible, responsive web interfaces and refining my React component architectures. Actively exploring advanced CSS layouts and animations.
+                Building responsive frontend websites and portfolio projects using React, HTML, CSS, and JavaScript. Continuously improving UI design, component structure, and modern web development practices.
               </p>
             </motion.div>
 
             <motion.div variants={fadeInUp} className="timeline-item">
               <div className="timeline-dot"></div>
               <div className="timeline-date">Past Year</div>
-              <h3 className="timeline-title">Personal Projects</h3>
-              <p className="timeline-org">Self-Directed Building</p>
+              <h3 className="timeline-title">Frontend Development</h3>
+              <p className="timeline-org">Hands-on Practice</p>
               <p className="timeline-desc">
-                Developed multiple complex frontend applications, including e-commerce UI clones, analytics dashboards, and interactive portfolios. Mastered state management in React and deepened my understanding of vanilla JavaScript fundamentals.
+                Created multiple responsive website clones and personal projects to strengthen practical frontend development skills. Gained experience with React, reusable components, routing, and responsive layouts.
               </p>
             </motion.div>
 
             <motion.div variants={fadeInUp} className="timeline-item">
               <div className="timeline-dot"></div>
               <div className="timeline-date">Earlier</div>
-              <h3 className="timeline-title">Continuous Learning</h3>
-              <p className="timeline-org">Frontend Fundamentals</p>
+              <h3 className="timeline-title">Learning the Fundamentals</h3>
+              <p className="timeline-org">Web Development</p>
               <p className="timeline-desc">
-                Dedicated intensive hours to mastering the core technologies of the web: HTML, CSS, and JavaScript. Completed numerous challenges on platforms like Frontend Mentor to bridge the gap between design files and functional code.
+                Built a strong foundation in HTML, CSS, and JavaScript through consistent practice and real-world coding projects, focusing on clean, responsive, and user-friendly interfaces.
               </p>
             </motion.div>
 
