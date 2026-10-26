@@ -2,8 +2,7 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, Code2, LayoutTemplate, Smartphone } from 'lucide-react';
 import { motion } from 'motion/react';
 import phoneImg from '../imgs/phoneimg.png';
-import mebelImg from '../projectImg/mebel.png';
-import webgoImg from '../projectImg/webgo.png';
+import auraMobile from '../projectImg/auraMobile.png';
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 30 },
@@ -83,7 +82,9 @@ export default function Home() {
       <section className="home-section">
         <div className="container">
           <motion.div
-            initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-100px" }}
             variants={staggerContainer}
           >
             <motion.div variants={fadeInUp} className="home-section-header">
@@ -91,52 +92,29 @@ export default function Home() {
                 <h2 className="home-section-title">Selected Works</h2>
                 <p className="home-section-subtitle">Recent frontend projects</p>
               </div>
-              <Link to="/projects" className="view-all-link">View all projects <ArrowRight size={16} /></Link>
+
+              <Link to="/projects" className="view-all-link">
+                View all projects <ArrowRight size={16} />
+              </Link>
             </motion.div>
 
             <motion.div variants={fadeInUp} className="preview-grid">
               <Link to="/projects" className="project-card">
                 <div className="project-image">
-                  <div className="project-image-placeholder"><img src={webgoImg} alt="webgo img" /></div>
+                  <div className="project-image-placeholder">
+                    <img src={auraMobile} alt="AuraMobile smartphone website" />
+                  </div>
                 </div>
-                <div className="project-info">
-                  <h3 className="project-title">WebGO</h3>
-                  <p className="project-desc">A responsive digital agency website clone showcasing web development, SEO services, and modern business solutions.</p>
-                </div>
-              </Link>
-              <Link to="/projects" className="project-card">
-                <div className="project-image">
-                  <div className="project-image-placeholder"><img src={mebelImg} alt="mebel img" /></div>
-                </div>
-                <div className="project-info">
-                  <h3 className="project-title">Shosh Mebel</h3>
-                  <p className="project-desc">A responsive furniture website clone featuring modern product showcases and a clean user experience.</p>
-                </div>
-              </Link>
-            </motion.div>
-          </motion.div>
-        </div>
-      </section>
 
-      <section className="home-section">
-        <div className="container">
-          <motion.div
-            initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }}
-            variants={staggerContainer}
-          >
-            <motion.div variants={fadeInUp} className="home-section-header">
-              <div>
-                <h2 className="home-section-title">Technical Skills</h2>
-                <p className="home-section-subtitle">My core competencies</p>
-              </div>
-              <Link to="/skills" className="view-all-link">View all skills <ArrowRight size={16} /></Link>
-            </motion.div>
-            <motion.div variants={fadeInUp} className="skill-badges">
-              {['HTML5', 'CSS3', 'JavaScript (ES6+)', 'Tailwind CSS', 'AI Tools', 'Responsive Design'].map(skill => (
-                <div className="skill-badge" key={skill} style={{ background: 'var(--bg-card)' }}>
-                  {skill}
+                <div className="project-info">
+                  <h3 className="project-title">AuraMobile</h3>
+                  <p className="project-desc">
+                    A modern smartphone website featuring product browsing,
+                    search, filtering, detailed product pages, and an
+                    interactive checkout prototype.
+                  </p>
                 </div>
-              ))}
+              </Link>
             </motion.div>
           </motion.div>
         </div>
