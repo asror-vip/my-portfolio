@@ -1,42 +1,20 @@
 import { useState, useMemo } from 'react';
 import { ExternalLink, Github, Search } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
-import mebelImg from '../projectImg/mebel.png';
-import webgoImg from '../projectImg/webgo.png';
-import metalImg from '../projectImg/metal.png';
+import auraMobile from '../projectImg/auraMobile.png';
+
 
 const allProjects = [
   {
     id: 1,
-    title: 'Mebel Website',
-    desc: 'A modern furniture showroom website clone featuring elegant product showcases, category browsing, responsive layouts, and a clean user experience. Built as a frontend practice project using HTML and CSS.',
-    tech: ['HTML', 'CSS'],
-    category: 'HTML/CSS',
-    image: mebelImg,
-    live: 'https://maymebelsayt.netlify.app/',
-    github: 'https://github.com/asror8471-gif/Mebel',
-  },
-
-  {
-    id: 2,
-    title: 'SEO Website',
-    desc: 'A modern corporate website clone for a digital agency offering web development, SEO optimization, UI/UX design, and online marketing services. Built as a frontend practice project with a responsive and clean user interface.',
-    tech: ['Tailwind CSS', 'TypeScript', 'AI'],
-    category: 'React',
-    image: webgoImg,
-    live: 'https://vebgo-clone.netlify.app/',
-    github: 'https://github.com/asror8471-gif/webGo',
-  },
-  {
-    id: 3,
-    title: 'Metal Website',
-    desc: 'A modern industrial manufacturing website clone showcasing steel pipes, metal products, company services, and responsive layouts. Built as a frontend practice project with a clean and professional user interface.',
-    tech: ['HTML', 'CSS'],
-    category: 'HTML/CSS',
-    image: metalImg,
-    live: 'https://delicate-lamington-edfaf3.netlify.app/',
-    github: 'no link',
-  },
+    title: 'AuraMobile',
+    desc: 'AURA Mobile — Smartphone E-commerce Website. A modern, responsive smartphone website built with Next.js, React, TypeScript, and Tailwind CSS. Features include product browsing, search and filtering, product details, color selection, favorites, and an interactive checkout UI prototype.',
+    tech: ['TailwindCSS', 'TpeScript', 'AI'],
+    category: 'TypeScript',
+    image: auraMobile,
+    live: 'https://auramobiles.netlify.app/',
+    github: 'https://github.com/asror-vip/AuraMobile',
+  }
 ];
 
 export default function Projects() {
