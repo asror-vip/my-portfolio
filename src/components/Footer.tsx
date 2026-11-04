@@ -11,7 +11,7 @@ export default function Footer() {
             <img src={GojoImg} alt="Gojo Profili" width="60" />
           </div>
           <div className="footer-social">
-            <a href="https://github.com/asror8471-gif" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/asror-vip" target="_blank" rel="noopener noreferrer">
               <Github size={20} />
               <span>GitHub</span>
             </a>
@@ -19,7 +19,7 @@ export default function Footer() {
               <Send size={20} />
               <span>Telegram</span>
             </a>
-            <a href="https://www.instagram.com/asror.pg1111/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/asror_tme/" target="_blank" rel="noopener noreferrer">
               <Instagram size={20} />
               <span>Instagram</span>
             </a>
@@ -27,7 +27,7 @@ export default function Footer() {
               <Globe size={20} />
               <span>Contra</span>
             </a>
-            <a href="mailto:asror8471@gmail.com">
+            <a href="mailto:asroraliqulov08@gmail.com">
               <Mail size={20} />
               <span>Email</span>
             </a>
