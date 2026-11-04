@@ -432,6 +432,15 @@
   font-weight: 500;
 }
 
+button.contact-link {
+  font-family: inherit;
+  font-size: 1rem;
+  color: inherit;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+}
+
 .contact-link:hover {
   border-color: var(--text-main);
   transform: translateX(5px);

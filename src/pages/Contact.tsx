@@ -1,4 +1,5 @@
-import { Mail, Github, Instagram, Globe, ArrowRight, Send } from 'lucide-react';
+import { useState } from 'react';
+import { Mail, Github, Instagram, Globe, ArrowRight, Send, Phone, Copy, Check } from 'lucide-react';
 import { motion } from 'motion/react';
 
 const fadeInUp = {
@@ -15,6 +16,32 @@ const staggerContainer = {
 };
 
 export default function Contact() {
+  const [copied, setCopied] = useState(false);
+
+  const handleCopyPhone = async () => {
+    const phoneNumber = '+998 77 010 4610';
+    try {
+      if (navigator.clipboard && window.isSecureContext) {
+        await navigator.clipboard.writeText(phoneNumber);
+      } else {
+        const textArea = document.createElement('textarea');
+        textArea.value = phoneNumber;
+        textArea.style.position = 'fixed';
+        textArea.style.left = '-999999px';
+        textArea.style.top = '-999999px';
+        document.body.appendChild(textArea);
+        textArea.focus();
+        textArea.select();
+        document.execCommand('copy');
+        textArea.remove();
+      }
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    } catch (err) {
+      console.error('Failed to copy: ', err);
+    }
+  };
+
   return (
     <motion.div 
       initial="hidden" 
@@ -39,15 +66,40 @@ export default function Contact() {
               </p>
 
               <div className="contact-links">
-                <a href="mailto:asror8471@gmail.com" className="contact-link">
+                <button 
+                  type="button" 
+                  onClick={handleCopyPhone} 
+                  className="contact-link"
+                  aria-label="Copy phone number"
+                  title="Nusxa olish uchun bosing"
+                >
+                  <div className="contact-link-left">
+                    <Phone size={20} />
+                    <span>+998 77 010 4610</span>
+                  </div>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', color: copied ? '#22c55e' : 'var(--text-muted)', fontSize: '0.85rem' }}>
+                    <span>{copied ? 'Nusxa olindi!' : 'Nusxa olish'}</span>
+                    {copied ? <Check size={16} /> : <Copy size={16} />}
+                  </div>
+                </button>
+
+                <a href="mailto:asroraliqulov08@gmail.com" className="contact-link">
                   <div className="contact-link-left">
                     <Mail size={20} />
-                    <span>Email Me</span>
+                    <span>asroraliqulov08@gmail.com</span>
                   </div>
                   <ArrowRight size={16} />
                 </a>
                 
-                <a href="https://github.com/asror8471-gif" target="_blank" rel="noopener noreferrer" className="contact-link">
+                <a href="https://t.me/asror_tme" target="_blank" rel="noopener noreferrer" className="contact-link">
+                  <div className="contact-link-left">
+                    <Send size={20} />
+                    <span>Telegram Profile</span>
+                  </div>
+                  <ArrowRight size={16} />
+                </a>
+
+                <a href="https://github.com/asror-vip" target="_blank" rel="noopener noreferrer" className="contact-link">
                   <div className="contact-link-left">
                     <Github size={20} />
                     <span>GitHub Profile</span>
@@ -55,7 +107,7 @@ export default function Contact() {
                   <ArrowRight size={16} />
                 </a>
 
-                <a href="https://www.instagram.com/asror.tme/" target="_blank" rel="noopener noreferrer" className="contact-link">
+                <a href="https://www.instagram.com/asror_tme/" target="_blank" rel="noopener noreferrer" className="contact-link">
                   <div className="contact-link-left">
                     <Instagram size={20} />
                     <span>Instagram Profile</span>
@@ -63,15 +115,7 @@ export default function Contact() {
                   <ArrowRight size={16} />
                 </a>
 
-                <a href="https://t.me/asror_tme" target="_blank" rel="noopener noreferrer" className="contact-link">
-                  <div className="contact-link-left">
-                    <Send size={20} />
-                    <span>Teligram Profile</span>
-                  </div>
-                  <ArrowRight size={16} />
-                </a>
-
-                <a href="https://contra.com" target="_blankhttps://contra.com/asror_8tbojnfq/work?r=asror_8tbojnfq" rel="noopener noreferrer" className="contact-link">
+                <a href="https://contra.com/asror_8tbojnfq/work?r=asror_8tbojnfq" target="_blank" rel="noopener noreferrer" className="contact-link">
                   <div className="contact-link-left">
                     <Globe size={20} />
                     <span>Contra Profile</span>

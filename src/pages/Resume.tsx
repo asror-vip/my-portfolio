@@ -43,7 +43,7 @@ export default function Resume() {
               <h2 className="resume-section-title">Asror Aliqulov</h2>
               <p className="resume-contact-info">
                 Frontend Developer<br/>
-                asror8471@gmail.com • github.com/asror8471-gif
+                asroraliqulov08@gmail.com • +998 77 010 4610 • github.com/asror-vip
               </p>
             </motion.div>
 
